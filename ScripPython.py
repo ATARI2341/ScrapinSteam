@@ -11,5 +11,5 @@ juegos = ["422970","526870","582010"]
 r= requests.get(website)
 resultado = r.text
 content = BeautifulSoup(resultado,'html.parser')
-juego = content.find_all('div',class_="game_area_purchase_game_wrapper")
+juego = content.find_all('div',id="game_area_purchase")
 print(juego)
